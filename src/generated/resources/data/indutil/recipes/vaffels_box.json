@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "E": {
+      "item": "minecraft:wheat"
+    },
+    "S": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "E#E",
+    "SSS"
+  ],
+  "result": {
+    "item": "indutil:vaffels_box"
+  },
+  "show_notification": true
+}
