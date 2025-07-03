@@ -17,6 +17,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.VAFFELS)));
     public static final RegistryObject<Item> VAFFELS_BOX = ITEMS.register("vaffels_box",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> APPLE_CIDER_VINEGAR = ITEMS.register("apple_cider_vinegar",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GRATER = ITEMS.register("grater",
+            () -> new Item(new Item.Properties()));
 
 
 

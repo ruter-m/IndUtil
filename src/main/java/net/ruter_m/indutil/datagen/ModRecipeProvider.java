@@ -48,5 +48,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.VAFFELS_BOX.get())
                 .unlockedBy(getHasName(ModItems.VAFFELS_BOX.get()), has(ModItems.VAFFELS_BOX.get()))
                 .save(consumer, new ResourceLocation(IndUtil.MOD_ID, "unpack_vaffels"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GRATER.get())
+                .pattern("IiI")
+                .pattern("I#I")
+                .pattern("I#I")
+                .define('I', Items.IRON_INGOT)
+                .define('#', Items.IRON_BARS)
+                .define('i', Items.IRON_NUGGET)
+                .unlockedBy("has_item", has(Items.RAW_IRON))
+                .save(consumer, new ResourceLocation(IndUtil.MOD_ID, "grater"));
     }
 }

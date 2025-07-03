@@ -21,6 +21,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.VASELINE.get());
                         pOutput.accept(ModItems.VAFFELS.get());
                         pOutput.accept(ModItems.VAFFELS_BOX.get());
+                        pOutput.accept(ModItems.APPLE_CIDER_VINEGAR.get());
+                        pOutput.accept(ModItems.GRATER.get());
 
                         pOutput.accept(ModBlocks.CHIPBOARD.get());
 
