@@ -49,6 +49,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.VAFFELS_BOX.get()), has(ModItems.VAFFELS_BOX.get()))
                 .save(consumer, new ResourceLocation(IndUtil.MOD_ID, "unpack_vaffels"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.APPLE_SHAVINGS.get(), 1)
+                .requires(ModItems.GRATER.get())
+                .requires(Items.APPLE)
+                .unlockedBy("has_item", has(Items.APPLE))
+                .save(consumer, new ResourceLocation(IndUtil.MOD_ID, "apple_and_grater"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GRATER.get())
                 .pattern("IiI")
                 .pattern("I#I")

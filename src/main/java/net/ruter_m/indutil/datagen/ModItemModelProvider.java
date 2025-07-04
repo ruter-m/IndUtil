@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.VAFFELS);
         simpleItem(ModItems.VAFFELS_BOX);
         simpleItem(ModItems.APPLE_CIDER_VINEGAR);
+        simpleItem(ModItems.APPLE_SHAVINGS);
         simpleItem(ModItems.GRATER);
     }
 

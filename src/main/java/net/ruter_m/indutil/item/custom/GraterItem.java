@@ -5,11 +5,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class GraterItem extends Item {
-    public GraterItem() {
+    public GraterItem(Properties properties) {
         super(new Item.Properties()
                 .durability(275)
-                .stacksTo(1)
-                .setNoRepair()
         );
     }
 
@@ -17,14 +15,13 @@ public class GraterItem extends Item {
     public ItemStack getCraftingRemainingItem(ItemStack stack) {
         ItemStack copy = stack.copy();
         copy.hurt(1, RandomSource.create(), null);
-
         return copy.getDamageValue() >= copy.getMaxDamage()
                 ? ItemStack.EMPTY
                 : copy;
     }
+
     @Override
-    public boolean hasCraftingRemainingItem() {
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
         return true;
     }
 }
-

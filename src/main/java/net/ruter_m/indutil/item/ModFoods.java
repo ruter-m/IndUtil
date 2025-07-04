@@ -9,4 +9,6 @@ public class ModFoods {
             .saturationMod(0.2f).effect(new MobEffectInstance(MobEffects.REGENERATION, 50, 1), 1.0f).alwaysEat().build();
     public static final FoodProperties VAFFELS = new FoodProperties.Builder().nutrition(3).fast()
             .saturationMod(0.6f).build();
+    public static final FoodProperties APPLE_SHAVINGS = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(0.3f).build();
 }
